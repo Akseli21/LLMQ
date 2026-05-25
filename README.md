@@ -87,7 +87,7 @@ LLMQ/
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/votre-username/LLMQ.git
+git clone https://github.com/Akseli21/LLMQ.git
 cd LLMQ
 ```
 
