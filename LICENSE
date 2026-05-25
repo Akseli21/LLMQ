@@ -1,0 +1,20 @@
+LICENCE ACADÉMIQUE — ESME Paris 2025-2026
+
+Projet LLMQ — Évaluation des performances d'un LLM en contexte d'aide au diagnostic clinique
+
+Auteurs :
+- Matthieu ADNET (déploiement technique, scripts d'expérimentation)
+- Julia CANARELLI (protocole clinique, analyse statistique, BERTScore)
+
+Tuteur pédagogique : M. Sami SOUIHI
+Experts cliniciens : Dr Jean CANARELLI · Interne Chjara-Maria TOMASI
+
+Ce projet est réalisé dans le cadre du projet d'application de deuxième année
+du cycle ingénieur de l'ESME Paris (promotion 2027, programme 2N/2NS).
+
+Usage autorisé : personnel et éducatif uniquement.
+Toute reproduction ou utilisation commerciale est interdite sans autorisation.
+
+Les cas cliniques utilisés sont issus des annales du Collège des enseignants
+d'endocrinologie, diabète et maladies métaboliques (2022) et sont utilisés
+à des fins académiques uniquement.
