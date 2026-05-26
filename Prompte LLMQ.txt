@@ -1,0 +1,394 @@
+
+TYPOLOGIE DE QUESTION 
+
+AAA.B 
+
+A = numéro du batch e question 
+
+B = type de reformulation 
+	AAA.1 = contexte clinique narratif + demande standard
+	AAA.2 = mêmes informations médicales sous forme condensée + même demande
+	AAA.3 = même contexte narratif que AAA.1 + demande reformulée
+	
+001
+
+{
+  "case_id": "001",
+  "prompts": [
+    {
+      "prompt_id": "001.1",
+      "contexte": "Une femme de 29 ans consulte pour infertilité primaire depuis 3 ans. Depuis l’arrêt de sa contraception orale, ses cycles sont irréguliers. Elle présente une acné modérée, un hirsutisme et une galactorrhée. IMC normal.",
+      "demande": "Quels éléments permettent d’évoquer un syndrome des ovaires polykystiques chez cette patiente ?"
+    },
+    {
+      "prompt_id": "001.2",
+      "contexte": "Patiente 29 ans, infertilité 3 ans. Cycles irréguliers. Signes : acné +, hirsutisme +, galactorrhée +, IMC normal.",
+      "demande": "Quels éléments permettent d’évoquer un syndrome des ovaires polykystiques chez cette patiente ?"
+    },
+    {
+      "prompt_id": "001.3",
+      "contexte": "Une femme de 29 ans consulte pour infertilité primaire depuis 3 ans. Depuis l’arrêt de sa contraception orale, ses cycles sont irréguliers. Elle présente une acné modérée, un hirsutisme et une galactorrhée. IMC normal.",
+      "demande": "Parmi les signes présents, lesquels sont en faveur d’un syndrome des ovaires polykystiques ?"
+    }
+  ]
+}
+
+#	"reponse_attendue" : ["acné", "hirsutisme", "L’acné et l’hirsutisme sont des signes d’hyperandrogénie clinique, compatibles avec un syndrome des ovaires polykystiques. La galactorrhée évoque plutôt une hyperprolactinémie. L’IMC normal et la thyroïde palpable ne sont pas des arguments en faveur du SOPK."]
+
+
+
+002 
+
+{
+  "case_id": "002",
+  "prompts": [
+    {
+      "prompt_id": "002.1",
+      "contexte": "Une femme de 23 ans consulte pour une aménorrhée secondaire apparue après l’arrêt d’une contraception œstroprogestative prise entre 18 et 21 ans. Elle a des cycles réguliers auparavant. Elle présente une prise de poids récente de 3 kg en 6 mois. Elle rapporte des céphalées nécessitant des antalgiques 1 à 2 fois par mois et un épisode récent de nausées traité par antiémétiques.",
+      "demande": "Quelles sont les causes possibles de cette aménorrhée ?"
+    },
+    {
+      "prompt_id": "002.2",
+      "contexte": "Patiente 23 ans. Aménorrhée secondaire après arrêt pilule (21 ans). Cycles antérieurs réguliers. Prise de poids +3 kg/6 mois. Céphalées +. Épisode de nausées récent traité par antiémétiques.",
+      "demande": "Quelles sont les causes possibles de cette aménorrhée ?"
+    },
+    {
+      "prompt_id": "002.3",
+      "contexte": "Une femme de 23 ans consulte pour une aménorrhée secondaire apparue après l’arrêt d’une contraception œstroprogestative prise entre 18 et 21 ans. Elle a des cycles réguliers auparavant. Elle présente une prise de poids récente de 3 kg en 6 mois. Elle rapporte des céphalées nécessitant des antalgiques 1 à 2 fois par mois et un épisode récent de nausées traité par antiémétiques.",
+      "demande": "Parmi les diagnostics suivants, lesquels peuvent expliquer cette aménorrhée ?"
+    }
+  ]
+}
+
+# "reponse_attendue": ["syndrome des ovaires polykystiques", "grossesse", "craniopharyngiome", "insuffisance ovarienne précoce"]
+
+
+003 
+{
+  "case_id": "003",
+  "prompts": [
+    {
+      "prompt_id": "003.1",
+      "contexte": "Une femme de 51 ans consulte pour une aménorrhée évoluant depuis 8 mois associée à des bouffées de chaleur. Elle rapporte des troubles du sommeil avec des réveils nocturnes fréquents. Elle présente une prise de poids récente de 5 kg en 6 mois sans modification de son alimentation. Sa pression artérielle est mesurée à 145/80 mmHg. Elle n’a pas d’antécédents particuliers et a deux enfants.",
+      "demande": "Quel est le diagnostic le plus probable à évoquer chez cette patiente comme étiologie de l’aménorrhée ?"
+    },
+    {
+      "prompt_id": "003.2",
+      "contexte": "Patiente 51 ans. Aménorrhée 8 mois. Bouffées de chaleur +. Troubles du sommeil +. Prise de poids +5 kg/6 mois. TA : 145/80 mmHg. Pas d’antécédents. 2 enfants.",
+      "demande": "Quel est le diagnostic le plus probable à évoquer chez cette patiente comme étiologie de l’aménorrhée ?"
+    },
+    {
+      "prompt_id": "003.3",
+      "contexte": "Une femme de 51 ans consulte pour une aménorrhée évoluant depuis 8 mois associée à des bouffées de chaleur. Elle rapporte des troubles du sommeil avec des réveils nocturnes fréquents. Elle présente une prise de poids récente de 5 kg en 6 mois sans modification de son alimentation. Sa pression artérielle est mesurée à 145/80 mmHg. Elle n’a pas d’antécédents particuliers et a deux enfants.",
+      "demande": "Parmi les diagnostics suivants, lequel est le plus probable pour expliquer cette aménorrhée ?"
+    }
+  ]
+}
+
+#  "reponse_attendue": ["ménopause"]
+
+
+004 
+{
+  "case_id": "004",
+  "prompts": [
+    {
+      "prompt_id": "004.1",
+      "contexte": "Un homme de 50 ans consulte pour un affaiblissement des érections lors des rapports sexuels. Après l’interrogatoire, il rapporte qu’il conserve une capacité d’érection résiduelle, qu’il présente encore des érections matinales spontanées et qu’il consulte peu de temps après l’apparition des troubles.",
+      "demande": "Quels éléments relevez-vous comme facteurs de bon pronostic dans ce trouble érectile ?"
+    },
+    {
+      "prompt_id": "004.2",
+      "contexte": "Patient 50 ans. Trouble érectile lors des rapports sexuels. Érection résiduelle conservée +. Érections matinales spontanées +. Consultation rapide après apparition des troubles.",
+      "demande": "Quels éléments relevez-vous comme facteurs de bon pronostic dans ce trouble érectile ?"
+    },
+    {
+      "prompt_id": "004.3",
+      "contexte": "Un homme de 50 ans consulte pour un affaiblissement des érections lors des rapports sexuels. Après l’interrogatoire, il rapporte qu’il conserve une capacité d’érection résiduelle, qu’il présente encore des érections matinales spontanées et qu’il consulte peu de temps après l’apparition des troubles.",
+      "demande": "Parmi les éléments présents, lesquels sont associés à un meilleur pronostic dans ce trouble érectile ?"
+    }
+  ]
+}
+
+#  "reponse_attendue": ["capacité d’érection résiduelle conservée", "persistance d’érections matinales spontanées", "délai court entre l’apparition des troubles et la première consultation"]
+
+
+005
+{
+  "case_id": "005",
+  "prompts": [
+    {
+      "prompt_id": "005.1",
+      "contexte": "Une femme de 48 ans consulte pour une prise en charge de son risque d’ostéoporose. Elle a des antécédents d’annexectomie bilatérale avec hystérectomie, sans traitement hormonal substitutif. Elle présente une perte osseuse importante sur 6 ans avec un T-score lombaire à -2,9. Elle se plaint d’asthénie, de constipation, de polyurie et a un antécédent de colique néphrétique.",
+      "demande": "Quelle est la conduite à tenir devant cette perte osseuse ?"
+    },
+    {
+      "prompt_id": "005.2",
+      "contexte": "Patiente 48 ans. Annexectomie bilatérale sans THS. Ostéoporose avec T-score lombaire -2,9. Perte osseuse rapide sur 6 ans. Symptômes : asthénie +, constipation +, polyurie +. ATCD : colique néphrétique.",
+      "demande": "Quelle est la conduite à tenir devant cette perte osseuse ?"
+    },
+    {
+      "prompt_id": "005.3",
+      "contexte": "Une femme de 48 ans consulte pour une prise en charge de son risque d’ostéoporose. Elle a des antécédents d’annexectomie bilatérale avec hystérectomie, sans traitement hormonal substitutif. Elle présente une perte osseuse importante sur 6 ans avec un T-score lombaire à -2,9. Elle se plaint d’asthénie, de constipation, de polyurie et a un antécédent de colique néphrétique.",
+      "demande": "Parmi les options suivantes, quelle est la conduite la plus appropriée devant cette perte osseuse ?"
+    }
+  ]
+}
+
+#      "reponse_attendue": ["prescrire un bilan d’ostéoporose secondaire"]
+
+
+006 
+{
+  "case_id": "006",
+  "prompts": [
+    {
+      "prompt_id": "006.1",
+      "contexte": "Un homme de 52 ans consulte pour une hyperglycémie à jeun confirmée à 1,78 g/L avec une HbA1c à 7,4 %. Son IMC est normal à 24,5 kg/m². Le bilan biologique retrouve une cytolyse modérée, une ferritine élevée à 800 µg/L et un coefficient de saturation de la transferrine à 65 %. Il ne présente pas d’antécédents particuliers.",
+      "demande": "Quels éléments cliniques sont en faveur d’une hémochromatose chez ce patient ?"
+    },
+    {
+      "prompt_id": "006.2",
+      "contexte": "Patient 52 ans. Hyperglycémie + HbA1c 7,4 %. IMC normal. Ferritine 800 µg/L. CST 65 %. Cytolyse modérée. Pas d’antécédents.",
+      "demande": "Quels éléments cliniques sont en faveur d’une hémochromatose chez ce patient ?"
+    },
+    {
+      "prompt_id": "006.3",
+      "contexte": "Un homme de 52 ans consulte pour une hyperglycémie à jeun confirmée à 1,78 g/L avec une HbA1c à 7,4 %. Son IMC est normal à 24,5 kg/m². Le bilan biologique retrouve une cytolyse modérée, une ferritine élevée à 800 µg/L et un coefficient de saturation de la transferrine à 65 %. Il ne présente pas d’antécédents particuliers.",
+      "demande": "Parmi les signes suivants, lesquels orientent vers une hémochromatose chez ce patient ?"
+    }
+  ]
+}
+
+#       "reponse_attendue": ["arthralgies des métacarpophalangiennes", "asthénie", "antécédent familial de surcharge en fer"]
+
+
+007 
+{
+  "case_id": "007",
+  "prompts": [
+    {
+      "prompt_id": "007.1",
+      "contexte": "Un homme de 53 ans consulte après la survenue d’un infarctus du myocarde chez son frère de 57 ans. Il a arrêté de fumer il y a 2 ans. Sa mère a présenté un infarctus du myocarde à 63 ans. Il n’a pas d’antécédent personnel notable en dehors de migraines.",
+      "demande": "Quels sont les facteurs de risque cardiovasculaire présents chez ce patient ?"
+    },
+    {
+      "prompt_id": "007.2",
+      "contexte": "Patient 53 ans. Frère IDM à 57 ans. Mère IDM à 63 ans. Tabagisme arrêté depuis 2 ans. Pas d’autre antécédent notable.",
+      "demande": "Quels sont les facteurs de risque cardiovasculaire présents chez ce patient ?"
+    },
+    {
+      "prompt_id": "007.3",
+      "contexte": "Un homme de 53 ans consulte après la survenue d’un infarctus du myocarde chez son frère de 57 ans. Il a arrêté de fumer il y a 2 ans. Sa mère a présenté un infarctus du myocarde à 63 ans. Il n’a pas d’antécédent personnel notable en dehors de migraines.",
+      "demande": "Parmi les éléments suivants, lesquels constituent des facteurs de risque cardiovasculaire chez ce patient ?"
+    }
+  ]
+}
+
+#       "reponse_attendue": ["âge", "antécédent d’infarctus du myocarde chez la mère", "tabagisme sevré récent"]
+
+
+
+008 
+{
+  "case_id": "008",
+  "prompts": [
+    {
+      "prompt_id": "008.1",
+      "contexte": "Un homme de 54 ans consulte pour des malaises qu’il décrit comme des hypoglycémies, associant sueurs, asthénie intense et palpitations. Ces épisodes surviennent surtout le matin à jeun, notamment après une grasse matinée, et ont déjà conduit à une perte de connaissance lors d’un effort physique.",
+      "demande": "Quels signes à l’interrogatoire sont évocateurs d’une hypoglycémie organique ?"
+    },
+    {
+      "prompt_id": "008.2",
+      "contexte": "Patient 54 ans. Malaises avec sueurs, asthénie, palpitations. Survenue à jeun (matin, grasse matinée). Épisode avec perte de connaissance après effort.",
+      "demande": "Quels signes à l’interrogatoire sont évocateurs d’une hypoglycémie organique ?"
+    },
+    {
+      "prompt_id": "008.3",
+      "contexte": "Un homme de 54 ans consulte pour des malaises qu’il décrit comme des hypoglycémies, associant sueurs, asthénie intense et palpitations. Ces épisodes surviennent surtout le matin à jeun, notamment après une grasse matinée, et ont déjà conduit à une perte de connaissance lors d’un effort physique.",
+      "demande": "Parmi les éléments suivants, lesquels orientent vers une hypoglycémie organique ?"
+    }
+  ]
+}
+
+#       "reponse_attendue": ["disparition rapide des symptômes après ingestion de sucres", "cauchemars nocturnes fréquents"]
+
+
+
+009
+
+{
+  "case_id": "009",
+  "prompts": [
+    {
+      "prompt_id": "009.1",
+      "contexte": "Un homme de 67 ans consulte pour des malaises hypoglycémiques associant sueurs, pâleur et tremblements, évoluant depuis 6 mois avec aggravation récente. Ces épisodes surviennent surtout à jeun et peuvent aller jusqu’à une perte de connaissance. Il présente une perte de poids récente, une asthénie, des troubles du sommeil avec réveils nocturnes et fringales. Il a un antécédent d’éthylisme chronique sevré. L’examen retrouve un aspect cutané bronzé et une glycémie à jeun à 0,27 g/L.",
+      "demande": "Quelles sont les étiologies d’hypoglycémies organiques à évoquer en priorité dans cette situation ?"
+    },
+    {
+      "prompt_id": "009.2",
+      "contexte": "Patient 67 ans. Hypoglycémies sévères à jeun avec perte de connaissance. Évolution progressive. Amaigrissement +, asthénie +, troubles du sommeil +. ATCD : éthylisme sevré. Teint bronzé. Glycémie 0,27 g/L.",
+      "demande": "Quelles sont les étiologies d’hypoglycémies organiques à évoquer en priorité dans cette situation ?"
+    },
+    {
+      "prompt_id": "009.3",
+      "contexte": "Un homme de 67 ans consulte pour des malaises hypoglycémiques associant sueurs, pâleur et tremblements, évoluant depuis 6 mois avec aggravation récente. Ces épisodes surviennent surtout à jeun et peuvent aller jusqu’à une perte de connaissance. Il présente une perte de poids récente, une asthénie, des troubles du sommeil avec réveils nocturnes et fringales. Il a un antécédent d’éthylisme chronique sevré. L’examen retrouve un aspect cutané bronzé et une glycémie à jeun à 0,27 g/L.",
+      "demande": "Parmi les diagnostics suivants, lesquels doivent être évoqués en priorité devant cette hypoglycémie organique ?"
+    }
+  ]
+}
+
+#   "reponse_attendue": ["insulinome", "prise cachée d’agents hypoglycémiants", "insuffisance surrénalienne périphérique", "dénutrition"]
+
+
+010
+{
+  "case_id": "010",
+  "prompts": [
+    {
+      "prompt_id": "010.1",
+      "contexte": "Un homme de 63 ans est adressé après la découverte fortuite de nodules thyroïdiens lors d’un écho-Doppler des vaisseaux du cou réalisé dans le cadre d’un accident vasculaire cérébral. Aucun autre élément clinique n’est précisé concernant ces nodules.",
+      "demande": "Quelles explorations complémentaires demandez-vous en première intention pour évaluer ces nodules thyroïdiens ?"
+    },
+    {
+      "prompt_id": "010.2",
+      "contexte": "Patient 63 ans. Nodules thyroïdiens découverts fortuitement à l’écho-Doppler cervical après AVC. Pas d’autre précision.",
+      "demande": "Quelles explorations complémentaires demandez-vous en première intention pour évaluer ces nodules thyroïdiens ?"
+    },
+    {
+      "prompt_id": "010.3",
+      "contexte": "Un homme de 63 ans est adressé après la découverte fortuite de nodules thyroïdiens lors d’un écho-Doppler des vaisseaux du cou réalisé dans le cadre d’un accident vasculaire cérébral. Aucun autre élément clinique n’est précisé concernant ces nodules.",
+      "demande": "Parmi les examens suivants, lesquels doivent être réalisés en première intention pour explorer ces nodules thyroïdiens ?"
+    }
+  ]
+}
+
+#       "reponse_attendue": ["dosage de TSH", "échographie cervicale"]
+
+
+011
+{
+  "case_id": "011",
+  "prompts": [
+    {
+      "prompt_id": "011.1",
+      "contexte": "Une femme de 27 ans consulte pour une asthénie évoluant depuis plusieurs mois. Le bilan biologique retrouve une TSH élevée à 12,2 mUI/L. Elle a des antécédents d’asthme dans l’enfance et de cardiopathie congénitale opérée. Elle fume 10 cigarettes par jour.",
+      "demande": "Quels éléments recherchez-vous à l’interrogatoire et à l’examen clinique dans ce contexte de dysthyroïdie ?"
+    },
+    {
+      "prompt_id": "011.2",
+      "contexte": "Patiente 27 ans. Asthénie chronique. TSH 12,2 mUI/L. ATCD : asthme, cardiopathie congénitale opérée. Tabagisme actif.",
+      "demande": "Quels éléments recherchez-vous à l’interrogatoire et à l’examen clinique dans ce contexte de dysthyroïdie ?"
+    },
+    {
+      "prompt_id": "011.3",
+      "contexte": "Une femme de 27 ans consulte pour une asthénie évoluant depuis plusieurs mois. Le bilan biologique retrouve une TSH élevée à 12,2 mUI/L. Elle a des antécédents d’asthme dans l’enfance et de cardiopathie congénitale opérée. Elle fume 10 cigarettes par jour.",
+      "demande": "Parmi les éléments suivants, lesquels devez-vous rechercher à l’interrogatoire et à l’examen clinique devant cette dysthyroïdie ?"
+    }
+  ]
+}
+
+#       "reponse_attendue": ["goitre", "antécédent de radiothérapie cervicale", "prise d’amiodarone"]
+
+
+012
+{
+  "case_id": "012",
+  "prompts": [
+    {
+      "prompt_id": "012.1",
+      "contexte": "Un homme de 23 ans consulte pour une hypertrophie sensible du sein gauche évoluant depuis l’adolescence. Il ne présente pas d’autre symptôme associé. L’examen clinique retrouve un patient de grande taille, sans anomalie générale notable.",
+      "demande": "Quelles sont les caractéristiques d’une gynécomastie vraie ?"
+    },
+    {
+      "prompt_id": "012.2",
+      "contexte": "Patient 23 ans. Hypertrophie mammaire gauche douloureuse depuis la puberté. Pas d’autres symptômes. Examen clinique normal.",
+      "demande": "Quelles sont les caractéristiques d’une gynécomastie vraie ?"
+    },
+    {
+      "prompt_id": "012.3",
+      "contexte": "Un homme de 23 ans consulte pour une hypertrophie sensible du sein gauche évoluant depuis l’adolescence. Il ne présente pas d’autre symptôme associé. L’examen clinique retrouve un patient de grande taille, sans anomalie générale notable.",
+      "demande": "Parmi les propositions suivantes, lesquelles définissent une gynécomastie vraie ?"
+    }
+  ]
+}
+
+#       "reponse_attendue": ["prolifération de tissu glandulaire ou adipeux", "prolifération de tissu glandulaire", "peut être douloureuse"]
+
+
+013
+{
+  "case_id": "013",
+  "prompts": [
+    {
+      "prompt_id": "013.1",
+      "contexte": "Un homme de 57 ans consulte pour une mycose génitale récidivante associée à un syndrome polyuro-polydipsique apparu récemment. Vous suspectez un diabète de type 2.",
+      "demande": "Quels éléments anamnestiques et cliniques recherchez-vous pour étayer cette hypothèse ?"
+    },
+    {
+      "prompt_id": "013.2",
+      "contexte": "Patient 57 ans. Mycose génitale récidivante. Syndrome polyuro-polydipsique récent. Suspicion diabète de type 2.",
+      "demande": "Quels éléments anamnestiques et cliniques recherchez-vous pour étayer cette hypothèse ?"
+    },
+    {
+      "prompt_id": "013.3",
+      "contexte": "Un homme de 57 ans consulte pour une mycose génitale récidivante associée à un syndrome polyuro-polydipsique apparu récemment. Vous suspectez un diabète de type 2.",
+      "demande": "Parmi les éléments suivants, lesquels sont en faveur d’un diabète de type 2 chez ce patient ?"
+    }
+  ]
+}
+
+#       "reponse_attendue": ["obésité abdominale", "antécédents familiaux de diabète"]
+
+
+014 
+
+{
+  "case_id": "014",
+  "prompts": [
+    {
+      "prompt_id": "014.1",
+      "contexte": "Une femme de 31 ans enceinte de 12 semaines consulte pour suivi de grossesse. Elle présente un IMC à 26 kg/m², un antécédent de colique néphrétique et a déjà eu un enfant macrosome. Il existe un antécédent familial de diabète chez son grand-père.",
+      "demande": "Quels éléments justifient le dépistage d’une hyperglycémie en début de grossesse selon les recommandations ?"
+    },
+    {
+      "prompt_id": "014.2",
+      "contexte": "Patiente 31 ans. Grossesse 12 SA. IMC 26. ATCD : enfant macrosome. ATCD familial : diabète chez grand-père.",
+      "demande": "Quels éléments justifient le dépistage d’une hyperglycémie en début de grossesse selon les recommandations ?"
+    },
+    {
+      "prompt_id": "014.3",
+      "contexte": "Une femme de 31 ans enceinte de 12 semaines consulte pour suivi de grossesse. Elle présente un IMC à 26 kg/m², un antécédent de colique néphrétique et a déjà eu un enfant macrosome. Il existe un antécédent familial de diabète chez son grand-père.",
+      "demande": "Parmi les facteurs présents, lesquels indiquent un dépistage d’une hyperglycémie en début de grossesse ?"
+    }
+  ]
+}
+
+#    "reponse_attendue": ["surpoids"]
+
+
+015 
+{
+  "case_id": "015",
+  "prompts": [
+    {
+      "prompt_id": "015.1",
+      "contexte": "Une femme de 45 ans est adressée pour une diminution de la densité minérale osseuse avec un T-score à -3,0 au col fémoral et à -2,6 au rachis lombaire. Elle a un antécédent de cancer du sein traité chirurgicalement et reçoit un inhibiteur d’aromatase. Elle est fumeuse et présente depuis plusieurs semaines une asthénie, une perte d’appétit et des nausées.",
+      "demande": "Quels examens biologiques de première intention demandez-vous pour rechercher une cause endocrinologique à cette ostéoporose ?"
+    },
+    {
+      "prompt_id": "015.2",
+      "contexte": "Patiente 45 ans. Ostéoporose DXA : T-score col fémoral -3,0 ; rachis lombaire -2,6. ATCD cancer du sein. Traitement par inhibiteur d’aromatase. Tabagisme +. Asthénie, anorexie, nausées.",
+      "demande": "Quels examens biologiques de première intention demandez-vous pour rechercher une cause endocrinologique à cette ostéoporose ?"
+    },
+    {
+      "prompt_id": "015.3",
+      "contexte": "Une femme de 45 ans est adressée pour une diminution de la densité minérale osseuse avec un T-score à -3,0 au col fémoral et à -2,6 au rachis lombaire. Elle a un antécédent de cancer du sein traité chirurgicalement et reçoit un inhibiteur d’aromatase. Elle est fumeuse et présente depuis plusieurs semaines une asthénie, une perte d’appétit et des nausées.",
+      "demande": "Parmi les examens suivants, lesquels sont indiqués en première intention pour explorer une cause endocrinologique d’ostéoporose ?"
+    }
+  ]
+}
+
+#   "reponse_attendue": ["calcémie totale", "TSH"]
+
+
