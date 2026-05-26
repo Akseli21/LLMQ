@@ -47,33 +47,6 @@ Tous déployés localement via **Ollama** sur AMD RX 7900 XTX (24 Go VRAM).
 
 ---
 
-## Structure du dépôt
-
-```
-LLMQ/
-│
-├── README.md                          ← Ce fichier
-├── requirements.txt                   ← Dépendances Python
-├── LICENSE                            ← Licence académique
-│
-├── prompts/
-│   └── prompts_llmq_clean.json        ← 15 cas cliniques × 3 reformulations
-│
-├── scripts/                           ← Scripts d'expérimentation (M. ADNET)
-│   ├── llmq_3models.py                ← Test des 3 modèles (135 requêtes)
-│   ├── llmq_stabilite.py              ← Stabilité LLaMA + Gemma (3 répétitions)
-│   ├── llmq_stabilite_qwen.py         ← Stabilité Qwen (3 répétitions)
-│   └── bertscore_analysis.py          ← Analyse BERTScore (J. CANARELLI)
-│
-├── stats/                             ← Scripts statistiques (J. CANARELLI)
-│   ├── friedman_posthoc.py            ← Test de Friedman + post-hoc Wilcoxon
-│   ├── cochran_q.py                   ← Test Q de Cochran + post-hoc McNemar
-│   └── spearman_correlation.py        ← Corrélation de Spearman + scatter plot
-│
-└── results/
-    └── .gitkeep                       ← Les fichiers JSON de résultats (ignorés par git)
-```
-
 ---
 
 ## Installation
